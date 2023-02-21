@@ -173,24 +173,30 @@ header .cta{
 main section div{
   padding: 50px 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 main section:nth-child(even){
-  background-color: lightgrey;
+  background-color: #F6F6F6;
 }
 
-main section div .image{
-  height: 400px;
-  background-color: lightseagreen;
-  flex-grow: 4;
+main section:nth-child(-n +3) .image{
+  /*height: 400px;
+  background-color: lightseagreen;*/
+  width: 60%;
+}
+
+main section:nth-child(-n +3) img{
+  min-width: 450px;
+  max-width: 900px;
 }
 
 main section div .text{
-  height: 400px;
-  background-color: pink;
-  flex-grow: 2;
+  /*height: 400px;
+  background-color: pink;*/
+  width: 40%;
 }
 
 main section:nth-child(even) .image{
@@ -201,15 +207,35 @@ main section:last-child .container{
   flex-direction: column;
 }
 
+main section:last-child img{
+  width: 100%;
+}
+
 main section:last-child .cta{
   order: 2;
 }
 
-/*main section .recbox{
-  height: 800px;
-  width: 100%;
-  background-color: green;
-}*/
+main section .text{
+  display: flex;
+  flex-direction: column;
+  /*margin: 0 50px;*/
+  padding: 0 50px;
+}
+
+main section .text h2{
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+main section .text p{
+  font-weight: 500;
+  line-height: 20px;
+}
+
+main .recbox .cta{
+  background-image: url(../img/stars.svg);
+}
 /* /main */
 
 /* /footer */
