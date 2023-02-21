@@ -1,0 +1,167 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* regole generali */
+.container{
+  min-width: 600px;
+  max-width: 1500px;
+  width: 80%;
+  margin: auto;
+}
+
+.border{
+  border: 3px dashed black;
+}
+
+/* header */
+header .top-bar{
+  height: 80px;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+}
+
+header .top-bar .top-content{
+  display: flex;
+  justify-content: space-between;
+  background-color: chocolate;
+}
+
+header .top-bar .top-content .logo,
+header .top-bar .top-content .login{
+  width: 15%;
+  padding: 5px;
+}
+
+header .top-bar .top-content nav{
+  width: 70%;
+  padding: 5px;
+}
+
+header .top-bar .top-content nav ul{
+  display: flex;
+  justify-content: center;
+}
+
+header .top-bar .top-content nav ul li{
+  list-style: none;
+  margin-right: 15px;
+}
+
+header .top-bar .top-content nav ul li:last-child{
+  margin-right: none;
+}
+
+header .top-bar .top-content nav ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+header .top-bar .top-content nav ul li a:hover{
+  text-decoration: underline;
+}
+
+header .top-bar .top-content .login{
+  text-align: right;
+}
+
+header .jumbothron{
+  height: 300px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .jumbothron .container div{
+  background-color: palevioletred;
+  margin: 0 50px;
+  height: 250px;
+}
+/* /header */
+
+/* main */
+main section div{
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main section:nth-child(even){
+  background-color: lightgrey;
+}
+
+main section div .image{
+  height: 400px;
+  background-color: lightseagreen;
+  flex-grow: 4;
+}
+
+main section div .text{
+  height: 400px;
+  background-color: pink;
+  flex-grow: 2;
+}
+
+main section:nth-child(even) .image{
+  order: 1;
+}
+
+main section div .recbox{
+  height: 800px;
+  width: 100%;
+  background-color: green;
+}
+/* /main */
+
+/* /footer */
+footer{
+  background-color: darkslategrey;
+}
+
+footer section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0 20px;
+}
+
+footer section .first{
+  flex-grow: 1;
+  background-color: hotpink;
+  height: 600px;
+}
+
+footer section .second{
+  flex-grow: 2;
+  display: flex;
+  background-color: darkcyan;
+  height: 600px;
+}
+
+footer section .second .last-nav{
+  border: 2px dashed white;
+  flex-grow: 1;
+}
+
+footer section:last-child{
+  background-color: cyan;
+  height: 80px;
+  padding: 0;
+  margin-top: 20px;
+}
+
+footer section:last-child .bottom{
+  padding: 5px 10px;
+  background-color: lightsteelblue;
+}
+/* /footer */
+
+
+
+
+
