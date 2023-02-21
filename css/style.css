@@ -5,11 +5,15 @@
 }
 
 /* regole generali */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .container{
-  min-width: 600px;
+  min-width: 750px;
   max-width: 1500px;
-  width: 80%;
-  margin: auto;
+  width: 75%;
+  margin: 0 auto;
 }
 
 .border{
@@ -19,52 +23,60 @@
 /* header */
 header .top-bar{
   height: 80px;
-  background-color: aqua;
+  background-color: #3161E0;
   display: flex;
   align-items: center;
 }
 
-header .top-bar .top-content{
+header .top-content{
   display: flex;
   justify-content: space-between;
-  background-color: chocolate;
+  align-items: center;
 }
 
-header .top-bar .top-content .logo,
-header .top-bar .top-content .login{
-  width: 15%;
+header .logo,
+header .login{
+  width: 20%;
   padding: 5px;
 }
 
-header .top-bar .top-content nav{
-  width: 70%;
+header .logo{
+  display: inline-block;
+}
+
+header nav{
+  width: 60%;
   padding: 5px;
 }
 
-header .top-bar .top-content nav ul{
+header nav ul{
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-header .top-bar .top-content nav ul li{
+header nav ul li{
   list-style: none;
-  margin-right: 15px;
+  margin-right: 40px;
+  text-align: center;
 }
 
-header .top-bar .top-content nav ul li:last-child{
-  margin-right: none;
+header nav ul li:last-child{
+  margin-right: 0;
 }
 
-header .top-bar .top-content nav ul li a{
+header nav ul li a{
   text-decoration: none;
-  color: black;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
 }
 
-header .top-bar .top-content nav ul li a:hover{
+header nav ul li a:hover{
   text-decoration: underline;
 }
 
-header .top-bar .top-content .login{
+header .login{
   text-align: right;
 }
 
