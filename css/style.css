@@ -197,11 +197,19 @@ main section:nth-child(even) .image{
   order: 1;
 }
 
-main section div .recbox{
+main section:last-child .container{
+  flex-direction: column;
+}
+
+main section:last-child .cta{
+  order: 2;
+}
+
+/*main section .recbox{
   height: 800px;
   width: 100%;
   background-color: green;
-}
+}*/
 /* /main */
 
 /* /footer */
