@@ -257,8 +257,8 @@ main .recbox .cta{
   padding: 40px;
 }
 
-main .recbox .cta h3{
-  font-size: 30px;
+main .recbox .cta h4{
+  font-size: 25px;
   font-weight: 600;
   margin-bottom: 30px;
 }
@@ -269,37 +269,87 @@ footer{
   background-color: darkslategrey;
 }
 
-footer section{
+footer section.column-nav{ 
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 5px 0 20px;
+  align-items: flex-start;
+  padding: 50px 0 20px;
+  border-bottom: 1px solid #7289DA;
 }
 
 footer section .first{
-  flex-grow: 1;
-  background-color: hotpink;
-  height: 600px;
+  width: calc(100% / 3);
+}
+
+footer section h3,
+footer section h5{
+  color: #7289DA;
+}
+
+footer section h3{
+  font-size: 25px;
+  font-weight: 600;
+}
+
+footer section .lang{
+  padding: 20px 0;
+}
+
+footer section .lang img{
+  max-width: 25px;
+}
+
+footer section .lang select{
+  cursor: pointer;
+  vertical-align: top;
+  border: 0;
+  background-color: transparent;
+  color: white;
+}
+
+footer section li{
+  list-style: none;
+}
+
+footer section .social li{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+footer section a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+footer section a:hover{
+  color: #7289DA;
 }
 
 footer section .second{
-  flex-grow: 2;
+  width: calc((100% / 6) * 4);
   display: flex;
-  background-color: darkcyan;
-  height: 600px;
 }
 
 footer section .second .last-nav{
-  border: 2px dashed white;
   flex-grow: 1;
 }
 
+footer section .second h5,
+footer section .second a{
+  font-size: 1rem;
+  line-height: 30px;
+}
+
 footer section:last-child{
-  background-color: cyan;
-  height: 80px;
-  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center;
+  height: 80px; */
+  padding: 0 0 50px;
   margin-top: 20px;
 }
+
 
 footer section:last-child .bottom{
   padding: 5px 10px;
